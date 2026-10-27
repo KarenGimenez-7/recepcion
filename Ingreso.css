@@ -1,0 +1,86 @@
+        /* Estilos personalizados y animaciones */
+        body {
+            background: linear-gradient(145deg, #020617 0%, #001630 60%, #091e3a 100%);
+            overflow: hidden;
+        }
+
+        /* Animación para objetos informáticos flotantes */
+        @keyframes floatSlow {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-18px) rotate(5deg);
+            }
+        }
+
+        @keyframes floatReverse {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(18px) rotate(-6deg);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                opacity: 0.25;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .floating-tech-item {
+            position: absolute;
+            pointer-events: none;
+            color: rgba(203, 213, 225, 0.18);
+            transition: all 0.5s ease;
+        }
+
+        .floating-item-1 { animation: floatSlow 8s ease-in-out infinite; }
+        .floating-item-2 { animation: floatReverse 10s ease-in-out infinite; }
+        .floating-item-3 { animation: floatSlow 12s ease-in-out infinite 1s; }
+        .floating-item-4 { animation: floatReverse 9s ease-in-out infinite 2s; }
+
+        /* Efecto Glassmorphism */
+        .glass-card {
+            background: rgba(2, 6, 23, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(203, 213, 225, 0.4);
+            box-shadow: 0 0 35px rgba(203, 213, 225, 0.12), inset 0 0 15px rgba(255, 255, 255, 0.03);
+        }
+
+        /* Sombra resplandeciente sutil en hover */
+        .glass-card:hover {
+            border-color: rgba(248, 250, 252, 0.6);
+            box-shadow: 0 0 45px rgba(147, 197, 255, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+
+        /* Animación del contenido central */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.5s; }
+        .delay-3 { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Copos / Destellos de luz plateados */
+        .silver-sparkle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(248, 250, 252, 0.8) 0%, rgba(203, 213, 225, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }

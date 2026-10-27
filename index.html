@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a Mi Recepción</title>
+    
+    <!-- Google Fonts: Cinzel & Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="Ingreso.css">
+    <!-- Font Awesome Icons para íconos informáticos flotantes sutiles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+        <script src="js.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'night-bg': '#020617',
+                        'night-deep': '#001630',
+                        'silver-light': '#f8fafc',
+                        'silver-mid': '#e2e8f0',
+                        'silver-dark': '#cbd5e1',
+                        'tech-blue': '#1e3a8a',
+                        'glow-blue': '#3b82f6',
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+
+</head>
+<body class="w-full h-screen font-roboto flex items-center justify-center relative select-none">
+
+    <!-- FONDO TECNOLÓGICO: ÍCONOS Y ELEMENTOS FLOTANTES DE INFORMÁTICA -->
+    <div id="tech-background" class="absolute inset-0 w-full h-full overflow-hidden">
+        
+        <!-- Líneas de Circuito integradas en las esquinas -->
+        <svg class="absolute top-0 left-0 w-64 h-64 text-silver-dark/10 pointer-events-none" viewBox="0 0 200 200" fill="none" stroke="currentColor">
+            <path d="M 0 50 L 80 50 L 120 90 L 200 90" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <circle cx="80" cy="50" r="4" fill="currentColor"/>
+            <circle cx="120" cy="90" r="4" fill="currentColor"/>
+            <path d="M 50 0 L 50 100 L 90 140" stroke-width="1.5"/>
+            <circle cx="90" cy="140" r="4" fill="currentColor"/>
+        </svg>
+
+        <svg class="absolute bottom-0 right-0 w-72 h-72 text-silver-dark/10 pointer-events-none" viewBox="0 0 200 200" fill="none" stroke="currentColor">
+            <path d="M 200 150 L 120 150 L 80 110 L 0 110" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <circle cx="120" cy="150" r="4" fill="currentColor"/>
+            <circle cx="80" cy="110" r="4" fill="currentColor"/>
+            <path d="M 150 200 L 150 100 L 100 50" stroke-width="1.5"/>
+            <circle cx="100" cy="50" r="4" fill="currentColor"/>
+        </svg>
+
+        <!-- Elementos 1: Microchip CPU -->
+        <div class="floating-tech-item floating-item-1 top-[12%] left-[10%] text-4xl md:text-5xl">
+            <i class="fa-solid fa-microchip"></i>
+        </div>
+        
+        <!-- Elemento 2: Código / Tag HTML -->
+        <div class="floating-tech-item floating-item-2 top-[20%] right-[12%] text-3xl md:text-4xl">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <!-- Elemento 3: Laptop / Monitor -->
+        <div class="floating-tech-item floating-item-3 bottom-[18%] left-[14%] text-3xl md:text-4xl">
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
+
+        <!-- Elemento 4: Servidor / Base de Datos -->
+        <div class="floating-tech-item floating-item-4 bottom-[15%] right-[15%] text-4xl md:text-5xl">
+            <i class="fa-solid fa-server"></i>
+        </div>
+
+        <!-- Elemento 5: Código Binario Flotante -->
+        <div class="floating-tech-item floating-item-1 top-[45%] left-[5%] font-mono text-xs md:text-sm tracking-widest opacity-30 text-silver-mid">
+            01001001 01001110 01000110
+        </div>
+
+        <div class="floating-tech-item floating-item-2 top-[55%] right-[6%] font-mono text-xs md:text-sm tracking-widest opacity-30 text-silver-mid">
+            &lt;/GRADUADOS&gt;
+        </div>
+
+        <!-- Elemento 6: Terminal / Prompt -->
+        <div class="floating-tech-item floating-item-3 top-[75%] left-[30%] text-2xl md:text-3xl">
+            <i class="fa-solid fa-terminal"></i>
+        </div>
+
+        <!-- Elemento 7: Red / Nodos -->
+        <div class="floating-tech-item floating-item-4 top-[15%] left-[45%] text-2xl md:text-3xl">
+            <i class="fa-solid fa-network-wired"></i>
+        </div>
+    </div>
+
+    <!-- TARJETA CONTENEDORA PRINCIPAL (GLASSMORPHISM ELEGANTE) -->
+    <main class="relative z-10 w-[90%] max-w-xl p-8 md:p-12 rounded-2xl glass-card text-center transition-all duration-500">
+        
+        <!-- Adorno Superior: Icono de Graduación con toque Tech -->
+        <div class="fade-in-up delay-1 mb-4 inline-flex items-center justify-center w-14 h-14 rounded-full border border-silver-dark/40 bg-night-bg/50 text-silver-mid shadow-lg">
+            <i class="fa-solid fa-graduation-cap text-2xl text-silver-light"></i>
+        </div>
+
+        <!-- Título Principal -->
+        <h1 class="fade-in-up delay-1 font-cinzel text-3xl sm:text-4xl md:text-5xl font-semibold tracking-widest text-silver-light mb-4 drop-shadow-md">
+            MI RECEPCIÓN
+        </h1>
+
+        <!-- Línea divisora estilo plata -->
+        <div class="fade-in-up delay-1 w-24 h-[1px] bg-gradient-to-r from-transparent via-silver-dark to-transparent mx-auto my-4"></div>
+
+        <!-- Mensaje / Subtítulo -->
+        <p class="fade-in-up delay-2 font-roboto font-light text-base sm:text-lg text-silver-dark leading-relaxed max-w-md mx-auto mb-8 tracking-wide">
+            Quiero que formes parte de este momento tan importante para mí y mis compañeros graduados.
+        </p>
+
+        <!-- Botón de Ingreso con Efecto Plata y Brillo Azul -->
+        <div class="fade-in-up delay-3">
+            <a href="recep/rec.html" class="inline-block group relative">
+                <!-- Resplandor exterior en hover -->
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-glow-blue to-silver-mid rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500 group-hover:duration-200"></div>
+                
+                <!-- Botón visible -->
+                <button class="relative px-8 py-3.5 bg-night-bg/90 hover:bg-tech-blue border border-silver-dark/60 hover:border-silver-light rounded-xl font-cinzel font-semibold text-sm sm:text-base tracking-widest text-silver-light transition-all duration-300 shadow-xl flex items-center justify-center gap-3">
+                    <span>INGRESAR</span>
+                    <i class="fa-solid fa-chevron-right text-xs transition-transform duration-300 group-hover:translate-x-1 text-silver-mid"></i>
+                </button>
+            </a>
+        </div>
+
+    </main>
+</body>
+</html>
